@@ -1,0 +1,204 @@
+/*
+Theme Name: ACF Theme
+Theme URI: https://visapass/themes/acf-theme/
+Author: S M Ahaduzzaman
+Author URI: https://visapass/
+Description: Our default theme for 2020 is designed to take full advantage of the flexibility of the block editor. Organizations and businesses have the ability to create dynamic landing pages with endless layouts using the group and column blocks. The centered content column and fine-tuned typography also makes it perfect for traditional blogs. Complete editor styles give you a good idea of what your content will look like, even before you publish. You can give your site a personal touch by changing the background colors and the accent color in the Customizer. The colors of all elements on your site are automatically calculated based on the colors you pick, ensuring a high, accessible color contrast for your visitors.
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Version: 1.0
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: acf
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+img {
+	max-width: 100%;
+}
+.navbar-nav li a {
+	font-size: 14px;
+	padding-top: 2.3rem;
+	padding-bottom: 2.3rem;
+	padding-left: 18px;
+	padding-right: 18px;
+	font-weight: 700;
+	color: #000000;
+	position: relative;
+	text-transform: uppercase;
+	opacity: 1 !important;
+	display: block;
+  }
+  .navbar-nav li a::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: 0px;
+	left: 0;
+	background-color: #1ba12d;
+	visibility: hidden;
+	-webkit-transform: scaleX(0);
+	-ms-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: all 0.5s ease-in-out 0s;
+	-o-transition: all 0.5s ease-in-out 0s;
+	transition: all 0.5s ease-in-out 0s;
+	z-index: -1;
+  }
+  .navbar-nav li a:hover {
+	color: #1ba12d;
+  }
+  .navbar-nav li a:hover::before {
+	visibility: visible;
+	background-color: #1ba12d;
+	-webkit-transform: scaleX(1);
+	-ms-transform: scaleX(1);
+	transform: scaleX(1);
+  }
+  
+  .navbar-nav li.current_page_item a {
+	color: #1ba12d;
+  }
+
+  .fa.fa-address-book {
+	font-size: 80px;
+	color: gray;
+	opacity: 0.4;
+}
+.fa.fa-adjust {
+	font-size: 80px;
+	color: gray;
+	opacity: 0.4;
+}
+  .fa.fa-adn {
+	font-size: 80px;
+	color: gray;
+	opacity: 0.4;
+}
+.fa.fa-anchor {
+	font-size: 80px;
+	color: gray;
+	opacity: 0.4;
+}
+
+.widget .wp-block-page-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.widget .wp-block-categories-list.wp-block-categories {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.widget .wp-block-archives-list.wp-block-archives {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.widget .list-unstyled h4 {
+	font-size: 18px;
+	margin-bottom: 30px;
+	font-weight: 600;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.footer .footer-heading {
+	font-size: 18px;
+	margin-bottom: 30px;
+	font-weight: 600;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.wpcf7-form-control.wpcf7-textarea.wpcf7-validates-as-required.form-control{
+	height: 100px;
+}
+
+.footer .form-consultation textarea.form-control {
+	height: 100px;
+}
+/* 
+.ftco-faqs button[aria-expanded="true"] {
+	background-color: #1ba12d;
+	color: #fff !important;
+} */
+
+.single-comment .comment-body {
+	display: flex;
+  }
+  .single-comment .comment-body .avatar {
+	width: 100px;
+	margin-right: 55px;
+	height: auto;
+  }
+  .single-comment .comment-list li .comment-body {
+	margin-left: 0;
+	float: left;
+  }
+  .comment-list li .comment-body {
+	float: left;
+  }
+  .comment-meta.commentmetadata {
+	margin-left: 30px;
+  }
+  .comments-title {
+	margin-bottom: 35px;
+  }
+  .comment-meta.commentmetadata a.url {
+	color: rgba(0, 0, 0, 0.8);
+	font-size: 20px;
+  }
+  .comment-meta.commentmetadata p {
+	margin-top: 15px;
+  }
+  .comment-list li .comment-body .reply {
+	width: 65px;
+  }
+  
+  #email-notes {
+	display: none;
+  }
+  .comment-notes {
+	display: none;
+  }
+  .comment-form {
+	background-color: #f8f9fd;
+	padding: 3rem;
+  }
+  .comment-form label {
+	display: block;
+	font-size: 16px;
+  }
+  .comment-form input,
+  .comment-form textarea {
+	width: 100%;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	height: 52px;
+	padding: 0.375rem 0.75rem;
+  }
+  .comment-form textarea {
+	height: inherit;
+  }
+  .comment-form input[type="submit"] {
+	background-color: #1ba12d;
+	color: #fff;
+	font-weight: 700;
+	font-size: 16px;
+	width: auto;
+	padding: 0 1.5rem;
+	cursor: pointer;
+	transition: 0.3s;
+  }
+  .comment-form input[type="submit"]:hover {
+	background-color: transparent;
+	color: #1ba12d;
+	border-color: #1ba12d;
+  }
